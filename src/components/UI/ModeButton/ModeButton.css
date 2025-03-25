@@ -1,0 +1,72 @@
+/* Variables globales del tema */
+:root {
+    --bg-color: #fff;
+    --text-color: #222;
+}
+
+/* Aplicamos los colores al body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Contenedor del switch */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos del switch */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+/* Ocultar input para personalizar el switch */
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilos del slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eece42;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+/* Círculo dentro del slider */
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Cambia el color del switch cuando está activado */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* Mueve el círculo del switch cuando está activado */
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
