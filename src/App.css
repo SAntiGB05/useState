@@ -11,15 +11,35 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.card{
-  background-color: antiquewhite;
+.Big-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.container-section{
+  width: 300px;
+  height: 140px;
+  background-color: #dce0e2aa;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 16px;
+}
+
+.container-buttons{
+  display: flex;
+  margin-top: 10px;
 }
 
 

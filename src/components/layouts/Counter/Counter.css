@@ -1,0 +1,28 @@
+.counter-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .counter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 0.3em 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .start {
+    background-color: #c6cfd6aa;
+    color: white;
+  }
+  
+  .stop {
+    background-color: #c6cfd6aa;
+    color: white;
+  }
+  
+  .counter-button:hover {
+    border-color: #61dafbaa;
+  }
+  

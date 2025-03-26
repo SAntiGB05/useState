@@ -6,11 +6,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #91d8f5;
+  background-color: #c6cfd6aa;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #368bdb;
+  border-color: #61dafbaa;
 }
